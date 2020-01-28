@@ -1,0 +1,12 @@
+jj = [0,10,20,40,60,100,1000]
+bl = [0,0.1,0.075,0.05,0.03,0.015,0.01]
+k = 0
+m = int(input("请输入年金："))
+for i in range(0,7):
+    if m>=jj[i]:
+        k = k + (jj[i]-jj[i-1])*bl[i]
+
+    else:
+        k = (m - jj[i-1])*bl[i]+k
+        print(k)
+        break
