@@ -1,0 +1,5 @@
+for a in range(1,100):
+    for b in range(a,100):
+        if (b*b-a*a==168):
+            print(a,b)
+            print(a*a-100)
